@@ -1,0 +1,310 @@
+body
+{
+    margin: 0;
+    padding: 0; /*To remove unwanted white border on the entire webpage */
+    line-height: 1.4;
+}
+#Section01
+{
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-between; /* Pushes div01 to left and div02 to right */
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    width: 100%; /* Vertically aligns content */
+}
+#div01 img
+{
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7463%) hue-rotate(135deg) brightness(97%) contrast(97%);
+    margin-right: 10px; /*It increases the space between logo and the text next to it*/
+}
+#div01
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+#div01 p
+{
+    display: flex;
+    align-items: center;
+}
+#div01 h2
+{
+    margin: 0px;
+    padding: 0px; /* Padding and margin removes the spacing around it because the head element has default spacing around it
+    so that the other elements are put on some gap*/
+    line-height: 1;
+}
+.contact-info
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0; /*The same spacing above applies here */
+    padding: 0;
+    line-height: 1; 
+    white-space: nowrap;
+                         /*Prevent automatic line breaks in navigation menus or buttons.
+                         Keep inline elements on a single line (e.g., price tags, breadcrumbs).
+                        Avoid breaking long words (useful for tables).*/
+}
+#nav01 a
+{
+    color:white;
+    text-decoration: none; /*Removing the underlining*/
+    font-size: larger;
+    padding-right: 15px;
+}
+#nav01 a:hover
+{
+    cursor:pointer; /*Hover kept in one and the default styling of anchor tags provided above*/
+}
+#AboutMe
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center ;
+}
+#profile img
+{
+    width: 400px;
+    height: 300px;
+}
+#description img
+{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle
+}
+#description h1
+{
+    color: skyblue;
+    font-size: 4em;
+    font-weight: bolder;
+    margin: 0px;
+    padding: 0px;
+}
+#Skills
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+     /*It is for aligning the content along main axis */
+    /* While align items is for alsigning across corss axis*/
+}
+#skillcontainer
+{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px;
+    grid-template-rows:  150px 150px ; /* There was need of two coloumns
+    only 1 to 2 and 2 to 3 i.e only two coloumns */
+    gap: 50px;
+    margin: 0px;
+    padding: 0px;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    margin: 15px;*/
+}
+#skill01
+{
+    margin-left: 15px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+#skill02
+{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+#skill03
+{
+    grid-row: 1 / 2;
+    grid-column: 5 / 6;
+}
+#skill04
+{
+    grid-row: 1 / 2;
+    grid-column: 7 / 8;
+}
+#skill05
+{
+    margin-left: 15px;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+#skill06
+{
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+#Skills h3
+{
+    font-size: 3rem;
+    color: skyblue;
+    padding-left: 15px;
+}
+#skill01, #skill02, #skill03, #skill04, #skill05, #skill06
+{
+
+    background-color: white;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0.5px gray;
+    /* Takes five parameters x offset , y offset , blur radius, spread, color */ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#skill01 img, #skill02 img, #skill03 img, #skill04 img, #skill05 img, #skill06 img
+{
+    height: 60px;
+    width: 100px;
+    margin-left: 10px;
+}
+.skill figcaption
+{
+    text-align: center;
+}
+.skill p
+{
+    white-space: nowrap; /*white-space: nowrap;: This CSS 
+    property ensures that the text in the <p> tag
+     will not wrap onto a new line, no matter how long 
+    it is. It forces the content to stay in a single line. */
+}
+#Projects
+{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+#Projects h3
+{
+    font-size: 3rem;
+    color: skyblue;
+    padding-left: 15px;
+
+}
+#Projects h6
+{
+    font-size: 1rem;
+    color: black;
+    margin-left: 60px;
+}
+#Projects li
+{
+    margin-left: 70px;
+}
+#Projects hr
+{
+    color: black;
+    width: 60%;
+}
+#Recommendations h3
+{
+    font-size: 3rem;
+    color: skyblue;
+    padding-left: 15px;
+}
+#Allrecommendations span
+{
+    display: inline;
+    color:skyblue;
+}
+#Allrecommendations
+{
+    display: grid;
+    grid-template-columns: 250px, 250px, 250px;
+    grid-template-rows: 200px, 200px;
+    gap: 20px;
+}
+#recommendations01
+{
+    margin-left: 15px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    box-shadow: 0px, 0px, 5px, 0.5px gray;
+}
+#recommendations02
+{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    box-shadow: 0px, 0px, 5px, 0.5px gray;
+}
+#recommendations03
+{
+    margin-right: 15px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    box-shadow: 0px, 0px, 5px, 0.5px gray;
+}
+#Recommendations h6
+{
+    display: flex;
+    justify-content: center;
+    margin-right: 62px;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 5px;
+}
+#input, #textarea, #button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.up-arrow
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.up-arrow img
+{
+    height: 40px;
+    width: 40px;
+    filter: brightness(0) saturate(100%) invert(81%) sepia(9%) saturate(1852%) hue-rotate(163deg) brightness(97%) contrast(90%);
+
+}
+.recommendation-box {
+    border: 0.5px solid gray; /* Light gray border */
+    border-radius: 5px; /* Smooth rounded corners */
+    box-shadow: 0px 0px 5px 0.5px gray; /* Subtle shadow for depth */    padding: 15px; /* Adds spacing inside the box */
+    margin-left: 15px; /* Adds space between recommendations */
+ }
+ #button button
+ {
+    background-color:rgb(135, 206, 235);
+    color: black;
+ }
+ #popup1, #popup2
+ {
+    border: 1px solid skyblue;
+    border-radius: 1px ;
+    /*flex-direction: column; /*To align items vertically because line break isnt working here. */
+    /*align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 300px; */
+ }
